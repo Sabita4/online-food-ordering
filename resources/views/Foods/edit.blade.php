@@ -29,7 +29,7 @@
     <div class="text-red-500 mb-3 -mt-3">{{$message}}</div>
     @enderror
     <p>Current Picture</p>
-    <img src="{{asset('images/foods/'.$food->photopath)}}" alt="Food Image" class="h-20 w-20">
+    <img src="{{asset('images/foods/'.$foods->photopath)}}" alt="Food Image" class="h-20 w-20">
     <input type="file" class="border border-gray-300 p-2 rounded-md w-full mb-3" name="photopath" placeholder="Picture" value="{{$foods->photopath}}">
     @error('photopath')
     <div class="text-red-500 mb-3 -mt-3">{{$message}}</div>

@@ -8,7 +8,7 @@
         <option value="{{$category->id}}">{{$category->name}}</option>
         @endforeach
     </select>
-    <input type="text" class="border border-gray-300 p-2 rounded-md w-full mb-3" name="name" placeholder="Product Name" value="{{old('name')}}">
+    <input type="text" class="border border-gray-300 p-2 rounded-md w-full mb-3" name="name" placeholder="Food Name" value="{{old('name')}}">
     @error('name')
     <div class="text-red-500 mb-3 -mt-3">{{$message}}</div>
     @enderror
@@ -33,7 +33,7 @@
     <div class="text-red-500 mb-3 -mt-3">{{$message}}</div>
     @enderror
     <div class="flex justify-center mt-4">
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg ">Add Product</button>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg ">Add Food</button>
         <a href="{{route('foods.index')}}" class="bg-red-600 text-white px-8 py-2 rounded-lg ml-2">Cancel</a>
     </div>
 </form>
